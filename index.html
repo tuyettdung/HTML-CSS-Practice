@@ -881,22 +881,22 @@
     <script src="https://unpkg.com/swiper@8.0.7/swiper-bundle.min.js"></script>
     
     <script>
-        var testimonialThumbs = new Swiper(".testimonial__thumb", {
+        var testimonialThumb = new Swiper(".testimonial__thumb", {
             spaceBetween: 10,
             slidesPerView: 3,
             centeredSlides: true,
             freeMode: true,
             autoplay: true,
             loop: true,
-            speed: 3000
+            speed: 2000
         });
         var testimonialContent = new Swiper(".testimonial__comment", {
             spaceBetween: 10,
             autoplay: true,
             loop: true,
             speed: 3000,
-            thumbs: {
-                swiper: testimonialThumbs
+            thumb: {
+                swiper: testimonialThumb
             },
             pagination: {
                 el: ".swiper-pagination",
